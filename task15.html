@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .main{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        height: auto;
+        width: auto;
+        gap: 5px;
+    }
+    .one{
+       
+        height: 190px;
+        width: auto;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap:3px;
+        
+    }
+     .one1{
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+
+     }
+     .two{
+        border: 2px solid black;
+
+     }
+    .two1{
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+    }
+    #two2{
+        grid-column: 1/3;
+        grid-row: 1/2;
+
+    }
+    #two3{
+        grid-row: 1/3;
+    }
+    .three{
+        border: 2px solid black;
+
+    }
+    .three1{
+        width: auto;
+        border: 1px solid black;
+    }
+    #three2{
+        grid-column: 1/4;
+    }
+    #three4{
+        grid-column: 2/4;
+    }
+    #three5{
+        grid-column: 1/4;
+    }
+    .two{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+     gap:3px;
+    }
+    .four1{
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+    }
+    #four2{
+        grid-column: 1/3;
+    }
+    #four3{
+        grid-column: 3/5;
+    }
+    #four5{
+        grid-column: 2/5;
+    }
+    #four6{
+        grid-column: 1/5;
+    }
+    .three{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+     gap:3px;
+    }
+    .five{
+        border: 2px solid black;
+
+    }
+    .five1{
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+    }
+    .four{
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+     gap:3px;
+     border: 2px solid black;
+
+    }
+    .six{
+        border: 2px solid black;
+
+    }
+    .six1{
+        height: 50px;
+        width: auto;
+        border: 1px solid black;
+    }
+    #six2{
+        grid-column: 1/3;
+    }
+   
+    #six12{
+        grid-column: 1/3;
+    }
+    #six8{
+        grid-row: 3/6;
+        grid-column: 1/3;
+        height: auto;
+    }
+    #six7{
+        grid-row: 2/3;
+        grid-column: 3/5;
+        width: 48%;
+    }
+    #six12{
+        grid-column: 1/4;
+    }
+    .five{
+        display: grid;
+        grid-template-columns: auto auto auto auto ;
+     gap:2px;
+    }
+    .seven1{
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+    }
+    #seven2{
+        grid-column: 1/3;
+    }
+    #seven3{
+        grid-column: 3/5;
+
+    }
+    #seven4{
+        grid-column: 1/3;
+        height: auto;
+        grid-row: 2/4;
+    }
+    #seven5{
+        grid-column: 3/5;
+    }
+    .six{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto ;
+     gap:2px;
+    }
+    .eight1{
+        height: auto;
+        width: auto;
+        border: 1px solid black;
+    }
+    #eight9{
+        grid-column: 3/6;
+    }
+    #eight10{
+        grid-column: 1/6;
+    }
+    #nine2{
+        grid-column: 1/5;
+    }
+    
+</style>
+<body>
+    <div class="main">
+        <div class="one">
+            <div class="one1" id="one2" style="background-color: orange;">1</div>
+            <div class="one1" id="one3" style="background-color: rgb(47, 0, 255);">2</div>
+            <div class="one1" id="one4" style="background-color: rgb(0, 255, 55);">3</div>
+            <div class="one1" id="one5" style="background-color: rgb(255, 136, 0);">4</div>
+            <div class="one1" id="one6" style="background-color: rgb(149, 255, 0);">5</div>
+            <div class="one1" id="one7" style="background-color: rgb(255, 251, 0);">6</div>
+        </div>
+        <div class="one">
+            <div class="two1" id="two2" style="background-color: rgb(34, 255, 0);">1</div>
+            <div class="two1" id="two3" style="background-color: rgb(0, 229, 255);">2</div>
+            <div class="two1" id="two4" style="background-color: rgb(255, 0, 157);">3</div>
+            <div class="two1" id="two5" style="background-color: rgb(170, 231, 55);">4</div>
+        </div>
+        <div class="one">
+            <div class="three1" id="three2" style="background-color: rgb(255, 8, 0);">1</div>
+            <div class="three1" id="three3" style="background-color: rgb(45, 2, 89);">2</div>
+            <div class="three1" id="three4" style="background-color: rgb(9, 233, 154);">3</div>
+            <div class="three1" id="three5" style="background-color: rgb(75, 248, 59);">4</div>
+        </div>
+        <div class="two">
+            <div class="four1" id="four2" style="background-color: rgb(109, 109, 247);">1</div>
+            <div class="four1" id="four3" style="background-color: rgb(195, 255, 0);">2</div>
+            <div class="four1" id="four4" style="background-color: orange;">3</div>
+            <div class="four1" id="four5" style="background-color: rgb(26, 255, 0);">4</div>
+            <div class="four1" id="four6" style="background-color: rgb(255, 0, 0);">5</div>
+        </div>
+        <div class="three">
+            <div class="five1" id="five2" style="background-color: rgb(178, 245, 24);">1</div>
+            <div class="five1" id="five3" style="background-color: orange;">2</div>
+            <div class="five1" id="five4" style="background-color: rgb(159, 240, 8);">3</div>
+            <div class="five1" id="five5" style="background-color: orange;">4</div>
+            <div class="five1" id="five6" style="background-color: rgb(0, 255, 208);">5</div>
+            <div class="five1" id="five7" style="background-color: rgb(233, 15, 237);">6</div>
+            <div class="five1" id="five8" style="background-color: rgb(251, 90, 170);">7</div>
+            <div class="five1" id="five9" style="background-color: rgb(62, 248, 136);">8</div>
+            <div class="five1" id="five10" style="background-color: rgb(243, 20, 53);">9</div>
+            <div class="five1" id="five11" style="background-color: orange;">10</div>
+            <div class="five1" id="five12" style="background-color: rgb(187, 244, 197);">11</div>
+            <div class="five1" id="five13" style="background-color: orange;">12</div>
+            <div class="five1" id="five14" style="background-color: rgb(0, 187, 255);">13</div>
+            <div class="five1" id="five15" style="background-color: rgb(255, 68, 0);">14</div>
+            <div class="five1" id="five16" style="background-color: rgb(0, 255, 94);">15</div>
+            <div class="five1" id="five17" style="background-color: rgb(255, 247, 0);">16</div>
+            <div class="five1" id="five18" style="background-color: rgb(10, 247, 212);">17</div>
+            <div class="five1" id="five19" style="background-color: orange;">18</div>
+       </div>
+        <div class="four">
+            <div class="six1" id="six2" style="background-color: rgb(255, 0, 0);">1</div>
+            <div class="six1" id="six3" style="background-color: rgb(115, 0, 255);">2</div>
+            <div class="six1" id="six4" style="background-color: orange;">3</div>
+            <div class="six1" id="six5" style="background-color: rgb(0, 255, 55);">4</div>
+            <div class="six1" id="six6" style="background-color: rgb(47, 0, 255);">5</div>
+            <div class="six1" id="six7" style="background-color: orange;">6</div>
+            <div class="six1" id="six8" style="background-color: rgb(0, 255, 234);">7</div>
+            <div class="six1" id="six9" style="background-color: rgb(255, 0, 0);">8</div>
+            <div class="six1" id="six10" style="background-color: rgb(0, 255, 21);">9</div>
+            <div class="six1" id="six11" style="background-color: rgb(255, 0, 179);">10</div>
+            <div class="six1" id="six12" style="background-color: rgb(8, 0, 255);">11</div>
+            <div class="six1" id="six13" style="background-color: orange;">12</div>
+        </div>
+        <div class="five">
+            <div class="seven1" id="seven2" style="background-color: rgb(191, 255, 0);">1</div>
+            <div class="seven1" id="seven3" style="background-color: rgb(243, 180, 62);">2</div>
+            <div class="seven1" id="seven4" style="background-color: rgb(203, 171, 114);">3</div>
+            <div class="seven1" id="seven5" style="background-color: rgb(0, 255, 81);">4</div>
+            <div class="seven1" id="seven6" style="background-color: rgb(0, 255, 251);">5</div>
+            <div class="seven1" id="seven7" style="background-color: rgb(251, 0, 255);">6</div>
+         
+        
+        </div>
+        <div class="six">
+            <div class="eight1" id="eight2" style="background-color: rgb(255, 0, 0);">1</div>
+            <div class="eight1" id="eight3" style="background-color: rgb(183, 255, 0);">2</div>
+            <div class="eight1" id="eight4" style="background-color: rgb(251, 255, 0);">3</div>
+            <div class="eight1" id="eight5" style="background-color: rgb(123, 255, 0);">4</div>
+            <div class="eight1" id="eight6" style="background-color: rgb(0, 255, 98);">5</div>
+            <div class="eight1" id="eight7" style="background-color: rgb(0, 217, 255);">6</div>
+            <div class="eight1" id="eight8" style="background-color: rgb(136, 0, 255);">7</div>
+            <div class="eight1" id="eight9" style="background-color: rgb(255, 0, 187);">8</div>
+            <div class="eight1" id="eight10" style="background-color: rgb(255, 0, 0);">9</div>
+           
+        </div>
+        <div class="one">
+            <div class="seven1" id="nine2" style="background-color: rgb(0, 149, 255);">1</div>
+            <div class="seven1" id="seven4" style="background-color: rgb(255, 0, 0);">2</div>
+            <div class="seven1" id="seven5" style="background-color: rgb(25, 0, 255);">3</div>
+            <div class="seven1" id="seven6" style="background-color: orange;">4</div>
+            <div class="seven1" id="seven7" style="background-color: rgb(0, 255, 179);">5</div>
+        </div>
+    </div>
+</body>
+</html>
